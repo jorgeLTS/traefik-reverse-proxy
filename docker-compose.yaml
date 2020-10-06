@@ -22,7 +22,7 @@ services:
     container_name: traefik
     restart: always
 
-# Conteiner one
+# Container one
   whoami01:
     image: containous/whoami
     env_file: .env
@@ -30,7 +30,6 @@ services:
       - "traefik.frontend.rule=Host:whoami01.${DOMAIN}"
     networks:
       - proxy
-
 
 # Networks
 networks:
