@@ -23,10 +23,10 @@ $ sudo cp -R traefik/ /opt/docker/
 
 # Configuring docker compose our Traefik Dashboard
 
-Within the docker file compose on line 15 this domain of our site must be changed so that bringfik can identify the request with which we are working
+Within the docker file compose this domain of our site must be changed so that bringfik can identify the request with which we are working
 
 ```
-- "traefik.frontend.rule=Host:example.com"
+-traefik.frontend.rule=Host:monitor.${DOMAIN}
 ```
 
 # Setup file of traefik
@@ -35,7 +35,7 @@ Inside the folder of traefik there is a file called .env which has all the confi
 
 ```
 TRAEFIK_VERSION=v2.0
-DOMAIN=localhost.com
+DOMAIN=example.com
 HTTP_PORT=80
 HTTPS_PORT=443
 TRAEFIK_TOML_FILE_ROUTE=/opt/docker/traefik/traefik.toml
