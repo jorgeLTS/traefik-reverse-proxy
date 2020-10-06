@@ -1,7 +1,6 @@
 # Create New Docker Network
 
 Before running the docker compose create a new docker network named *proxy* or use any other name you want to use :
-
 ```
 $ docker network create proxy
 ```
@@ -9,7 +8,6 @@ $ docker network create proxy
 # Creating directories for traefik 
 
 To use the reverse proxy called traefik we are going to use the same directory of `/opt`
-
 ```
 $ sudo mkdir -p /opt/docker/{traefik,tmp}
 ```
