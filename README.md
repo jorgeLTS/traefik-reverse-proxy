@@ -21,12 +21,12 @@ $ sudo cp -R traefik/ /opt/docker/
  
 ```
 
-# Configuring the domain of our Traefik Dashboard
+# Configuring docker compose our Traefik Dashboard
 
 Within the docker file compose on line 15 this domain of our site must be changed so that bringfik can identify the request with which we are working
 
 ```
-- "traefik.frontend.rule=Host:monitor.localhost.com"
+- "traefik.frontend.rule=Host:example.com"
 ```
 
 # Setup file of traefik
