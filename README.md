@@ -17,7 +17,7 @@ $ sudo mkdir -p /opt/docker/{traefik,tmp}
 So that traefik work we need the configuration files so that he interprets our website url
 
 ```
-$ sudo cp ../traefik/ /opt/docker/traefik/
+$ sudo cp -R traefik/ /opt/docker/
  
 ```
 
