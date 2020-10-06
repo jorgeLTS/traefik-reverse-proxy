@@ -47,6 +47,7 @@ We need to create our user and password to enter the traefik dashboard. For this
 ```
 [entryPoints.foo.auth.basic]
 users = ["user:$apr1$6orwmnzb$YRm1DtL0zVYz9KSdiO8Cy0"]
+Example for User=admin and Password=admin is admin:$apr1$14fkxcbe$R3XDQXwrmrHp1XNuPJesa/
 ```
 
 # Launching the container
@@ -61,6 +62,6 @@ execute the following commands
 $ docker-compose up -d
 ```
 - Wait for the contain to run
-- Validate the container by entering in the browser to the following address http://monitor.localhost.com, the localhost.com is configured in the .env file of traefik,will ask us for a username and password that are the ones we configured earlier
+- Validate the container by entering in the browser to the following address http://monitor.example.com, the localhost.com is configured in the .env file of traefik,will ask us for a username and password that are the ones we configured earlier
 
 
