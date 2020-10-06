@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-
+# Reverse proxy
   traefik:
     image: traefik:${TRAEFIK_VERSION}                   # for use in production always use an specific version
     env_file: .env
@@ -22,6 +22,17 @@ services:
     container_name: traefik
     restart: always
 
+# Conteiner one
+  whoami01:
+    image: containous/whoami
+    env_file: .env
+    labels:
+      - "traefik.frontend.rule=Host:whoami01.${DOMAIN}"
+    networks:
+      - proxy
+
+
+# Networks
 networks:
   proxy: # new docker network to work
     external: true

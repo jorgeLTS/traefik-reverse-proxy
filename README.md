@@ -62,6 +62,6 @@ execute the following commands
 $ docker-compose up -d
 ```
 - Wait for the contain to run
-- Validate the container by entering in the browser to the following address http://monitor.example.com, the localhost.com is configured in the .env file of traefik,will ask us for a username and password that are the ones we configured earlier
-
+- Validate the container by entering in the browser to the following address http://monitor.example.com, the example.com is configured in the .env file of traefik,will ask us for a username and password that are the ones we configured earlier
+- Remember edit host file "hosts" example "127.0.0.1 example.com, 127.0.0.1 monitor.example.com"
 
