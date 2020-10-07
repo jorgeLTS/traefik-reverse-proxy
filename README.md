@@ -1,8 +1,3 @@
-
-<p align="center">
-<img src="docs/content/assets/img/traefik.logo.png" alt="Traefik" title="Traefik" />
-</p>
-
 # Create New Docker Network
 
 Before running the docker compose create a new docker network named *proxy* or use any other name you want to use :
